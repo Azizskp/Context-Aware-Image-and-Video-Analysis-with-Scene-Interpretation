@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+
+# Output folders
+output/
+uploads/
+static/output/
+
+# VS Code settings
+.vscode/
+
+# Model weights
+*.pt
+
+# Environment files
+.env

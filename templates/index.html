@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Context-Aware Segmentation</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #121212;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+
+        .upload-box {
+            margin-top: 30px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .loader {
+            display: none;
+            margin-top: 20px;
+        }
+
+        img, video {
+            margin-top: 20px;
+            max-width: 80%;
+        }
+    </style>
+
+    <script>
+        function showLoader() {
+            document.getElementById("loader").style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Context-Aware Image & Video Segmentation</h1>
+
+    <div class="upload-box">
+        <form method="POST" enctype="multipart/form-data" onsubmit="showLoader()">
+            <input type="file" name="file" required>
+            <br>
+            <button type="submit">Upload & Process</button>
+        </form>
+    </div>
+
+    <div id="loader" class="loader">
+        <p>Processing... Please wait ⏳</p>
+    </div>
+
+    {% if scene %}
+        <h2>Scene: {{ scene }}</h2>
+    {% endif %}
+
+    {% if output_file %}
+        {% if output_file.endswith('.jpg') %}
+            <img src="{{ url_for('static', filename=output_file) }}" style="max-width:80%; border:2px solid white;">
+        {% else %}
+            <video controls>
+                <source src="{{ url_for('static', filename=output_file) }}" type="video/mp4">
+            </video>
+        {% endif %}
+    {% endif %}
+
+</body>
+</html>
