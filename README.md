@@ -3,6 +3,7 @@
 ---
 
 ## 📌 Overview
+
 This project is an AI-based system that performs object detection and contextual scene interpretation on images and videos using YOLOv8, OpenCV, and contextual reasoning techniques.
 
 The system detects objects such as:
@@ -22,6 +23,7 @@ The project also includes an experimental AI-enhanced semantic reasoning module 
 ---
 
 ## ✨ Features
+
 - ⚡ Real-time object detection using YOLOv8
 - 🖼️ Image and video analysis
 - 🧠 Context-aware scene interpretation
@@ -34,6 +36,7 @@ The project also includes an experimental AI-enhanced semantic reasoning module 
 ---
 
 ## 🛠️ Technologies Used
+
 - 🐍 Python
 - 🎯 YOLOv8
 - 👁️ OpenCV
@@ -83,3 +86,70 @@ context-segmentation/
 ├── main1.py
 ├── requirements.txt
 └── README.md
+```
+
+---
+
+## ⚡ Installation
+
+### 📥 Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Context-Aware-Image-and-Video-Analysis-with-Scene-Interpretation.git
+```
+
+### 📂 Move Into Project Folder
+
+```bash
+cd Context-Aware-Image-and-Video-Analysis-with-Scene-Interpretation
+```
+
+### 📦 Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run Project
+
+### 🌐 Run Flask Web App
+
+```bash
+python app.py
+```
+
+### 💻 Run Main Local Processing
+
+```bash
+python main.py
+```
+
+### 🤖 Run AI-Enhanced Version
+
+```bash
+python main1.py
+```
+
+---
+
+## 🗂️ Dataset
+
+The YOLOv8 model used in this project is pre-trained on the COCO dataset.
+
+---
+
+## 🚀 Future Enhancements
+
+- 📷 Real-time webcam integration
+- 🏃 Activity recognition
+- 🔄 Multi-object tracking
+- ☁️ Cloud deployment
+- 🧠 Advanced AI-based semantic reasoning
+
+---
+
+## 👨‍💻 Author
+
+Aziz
